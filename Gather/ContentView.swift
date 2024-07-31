@@ -1,24 +1,19 @@
-//
-//  ContentView.swift
-//  Gather
-//
-//  Created by Caitlin Daitch on 7/8/24.
-//
-
 import SwiftUI
 
-struct ContentView: View {
+struct AppView: View {
+    @StateObject var flowViewModel: AppFlowViewModel
+    var createEventViewModel: CreateEventViewModel
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack(path: $flowViewModel.navigationPath) {
+            GatherLandingView(viewModel: flowViewModel)
+            .navigationDestination(for: Int.self) { i in
+                CreateEventView(flowViewModel: flowViewModel, createEventViewModel: createEventViewModel)
+            }
         }
-        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    AppView(flowViewModel: AppFlowViewModel(), createEventViewModel: CreateEventViewModel(model: CreateEventModel()))
 }
