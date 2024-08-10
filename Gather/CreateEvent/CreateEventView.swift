@@ -5,11 +5,17 @@ struct CreateEventView: View {
     var createEventViewModel: CreateEventViewModel
 
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Name").font(.headline)
-            TextField("", text: createEventViewModel.name)
+        Form {
+            Section {
+                TextField("Name", text: createEventViewModel.name)
+                TextField("Location", text: createEventViewModel.location)
+                TextField("Date", text: createEventViewModel.date)
+                TextField("Dsecription", text: createEventViewModel.description)
+                TextField("Image", text: createEventViewModel.image)
+            } header: {
+                Text("Event Details")
+            }
         }
-        .padding(.horizontal, 16)
     }
 }
 
