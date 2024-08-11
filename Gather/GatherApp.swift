@@ -4,7 +4,7 @@ import SwiftUI
 struct GatherApp: App {
     var body: some Scene {
         WindowGroup {
-            AppView(flowViewModel: AppFlowViewModel(), createEventViewModel: CreateEventViewModel(model: CreateEventModel()))
+            AppView(flowViewModel: AppFlowViewModel(), createEventViewModel: CreateEventViewModel(model: CreateEventModel(), defaultsManager: DefaultsManager()))
         }
     }
 }

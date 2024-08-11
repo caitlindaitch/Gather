@@ -15,5 +15,5 @@ struct AppView: View {
 }
 
 #Preview {
-    AppView(flowViewModel: AppFlowViewModel(), createEventViewModel: CreateEventViewModel(model: CreateEventModel()))
+    AppView(flowViewModel: AppFlowViewModel(), createEventViewModel: CreateEventViewModel(model: CreateEventModel(), defaultsManager: DefaultsManager()))
 }
