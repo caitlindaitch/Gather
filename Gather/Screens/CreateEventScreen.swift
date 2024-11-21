@@ -1,9 +1,10 @@
-import PhotosUI
 import SwiftUI
 
 struct CreateEventScreen: View {
     @Environment(\.modelContext) private var context
     @StateObject var flowController: AppFlowController
+
+    /// Data Bindings
 
     @State var name: String = ""
     @State var location: String = ""

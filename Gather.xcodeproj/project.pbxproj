@@ -17,8 +17,10 @@
 		6C5732B12C3CB05C00D0D370 /* GatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5732B02C3CB05C00D0D370 /* GatherTests.swift */; };
 		6C5732BB2C3CB05C00D0D370 /* GatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5732BA2C3CB05C00D0D370 /* GatherUITests.swift */; };
 		6C5732BD2C3CB05C00D0D370 /* GatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5732BC2C3CB05C00D0D370 /* GatherUITestsLaunchTests.swift */; };
+		6C9456602CEFCF6300FB4D5F /* EditEventScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C94565F2CEFCF6300FB4D5F /* EditEventScreen.swift */; };
 		6CC64D542CEFB09400828F86 /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC64D532CEFB09400828F86 /* EventData.swift */; };
 		6CC64D5A2CEFB54400828F86 /* GatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC64D592CEFB54400828F86 /* GatherButton.swift */; };
+		6CC64D5C2CEFCA4800828F86 /* ViewEventsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC64D5B2CEFCA4800828F86 /* ViewEventsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +54,10 @@
 		6C5732B62C3CB05C00D0D370 /* GatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C5732BA2C3CB05C00D0D370 /* GatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatherUITests.swift; sourceTree = "<group>"; };
 		6C5732BC2C3CB05C00D0D370 /* GatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6C94565F2CEFCF6300FB4D5F /* EditEventScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventScreen.swift; sourceTree = "<group>"; };
 		6CC64D532CEFB09400828F86 /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
 		6CC64D592CEFB54400828F86 /* GatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatherButton.swift; sourceTree = "<group>"; };
+		6CC64D5B2CEFCA4800828F86 /* ViewEventsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEventsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,8 @@
 			children = (
 				6C34344D2C59ACD000DD34E7 /* CreateEventScreen.swift */,
 				6C3434492C45ED9B00DD34E7 /* GatherLandingScreen.swift */,
+				6CC64D5B2CEFCA4800828F86 /* ViewEventsScreen.swift */,
+				6C94565F2CEFCF6300FB4D5F /* EditEventScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -290,10 +296,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C5732A22C3CB05A00D0D370 /* ContentView.swift in Sources */,
+				6CC64D5C2CEFCA4800828F86 /* ViewEventsScreen.swift in Sources */,
 				6C5732A02C3CB05A00D0D370 /* GatherApp.swift in Sources */,
 				6CC64D542CEFB09400828F86 /* EventData.swift in Sources */,
 				6C34344C2C45F15E00DD34E7 /* AppFlowController.swift in Sources */,
 				6C34344A2C45ED9B00DD34E7 /* GatherLandingScreen.swift in Sources */,
+				6C9456602CEFCF6300FB4D5F /* EditEventScreen.swift in Sources */,
 				6C34344E2C59ACD000DD34E7 /* CreateEventScreen.swift in Sources */,
 				6CC64D5A2CEFB54400828F86 /* GatherButton.swift in Sources */,
 			);

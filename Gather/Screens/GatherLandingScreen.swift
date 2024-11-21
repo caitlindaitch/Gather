@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct GatherLandingView: View {
+struct GatherLandingScreen: View {
     @StateObject var flowController: AppFlowController
 
     var body: some View {
@@ -10,7 +10,12 @@ struct GatherLandingView: View {
             Text("Party planning made easy")
                 .font(.subheadline)
             Button("CREATE GATHERING") {
-                flowController.navigateToCreateEvent()
+                flowController.navigate(to: .create)
+            }
+            .padding(.top)
+            .buttonStyle(.main)
+            Button("VIEW All GATHERINGS") {
+                flowController.navigate(to: .viewAll)
             }
             .buttonStyle(.main)
         }
@@ -19,5 +24,5 @@ struct GatherLandingView: View {
 }
 
 #Preview {
-    GatherLandingView(flowController: AppFlowController())
+    GatherLandingScreen(flowController: AppFlowController())
 }
