@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C34344A2C45ED9B00DD34E7 /* GatherLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3434492C45ED9B00DD34E7 /* GatherLandingView.swift */; };
-		6C34344C2C45F15E00DD34E7 /* AppFlowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C34344B2C45F15E00DD34E7 /* AppFlowViewModel.swift */; };
-		6C34344E2C59ACD000DD34E7 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C34344D2C59ACD000DD34E7 /* CreateEventView.swift */; };
+		6C34344A2C45ED9B00DD34E7 /* GatherLandingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3434492C45ED9B00DD34E7 /* GatherLandingScreen.swift */; };
+		6C34344C2C45F15E00DD34E7 /* AppFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C34344B2C45F15E00DD34E7 /* AppFlowController.swift */; };
+		6C34344E2C59ACD000DD34E7 /* CreateEventScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C34344D2C59ACD000DD34E7 /* CreateEventScreen.swift */; };
 		6C5732A02C3CB05A00D0D370 /* GatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C57329F2C3CB05A00D0D370 /* GatherApp.swift */; };
 		6C5732A22C3CB05A00D0D370 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5732A12C3CB05A00D0D370 /* ContentView.swift */; };
 		6C5732A42C3CB05B00D0D370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C5732A32C3CB05B00D0D370 /* Assets.xcassets */; };
@@ -17,6 +17,8 @@
 		6C5732B12C3CB05C00D0D370 /* GatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5732B02C3CB05C00D0D370 /* GatherTests.swift */; };
 		6C5732BB2C3CB05C00D0D370 /* GatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5732BA2C3CB05C00D0D370 /* GatherUITests.swift */; };
 		6C5732BD2C3CB05C00D0D370 /* GatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5732BC2C3CB05C00D0D370 /* GatherUITestsLaunchTests.swift */; };
+		6CC64D542CEFB09400828F86 /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC64D532CEFB09400828F86 /* EventData.swift */; };
+		6CC64D5A2CEFB54400828F86 /* GatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC64D592CEFB54400828F86 /* GatherButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6C3434492C45ED9B00DD34E7 /* GatherLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatherLandingView.swift; sourceTree = "<group>"; };
-		6C34344B2C45F15E00DD34E7 /* AppFlowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowViewModel.swift; sourceTree = "<group>"; };
-		6C34344D2C59ACD000DD34E7 /* CreateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventView.swift; sourceTree = "<group>"; };
+		6C3434492C45ED9B00DD34E7 /* GatherLandingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatherLandingScreen.swift; sourceTree = "<group>"; };
+		6C34344B2C45F15E00DD34E7 /* AppFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowController.swift; sourceTree = "<group>"; };
+		6C34344D2C59ACD000DD34E7 /* CreateEventScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventScreen.swift; sourceTree = "<group>"; };
 		6C57329C2C3CB05A00D0D370 /* Gather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C57329F2C3CB05A00D0D370 /* GatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatherApp.swift; sourceTree = "<group>"; };
 		6C5732A12C3CB05A00D0D370 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 		6C5732B62C3CB05C00D0D370 /* GatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C5732BA2C3CB05C00D0D370 /* GatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatherUITests.swift; sourceTree = "<group>"; };
 		6C5732BC2C3CB05C00D0D370 /* GatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6CC64D532CEFB09400828F86 /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
+		6CC64D592CEFB54400828F86 /* GatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatherButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,14 +81,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6C3434512C59B15400DD34E7 /* CreateEvent */ = {
-			isa = PBXGroup;
-			children = (
-				6C34344D2C59ACD000DD34E7 /* CreateEventView.swift */,
-			);
-			path = CreateEvent;
-			sourceTree = "<group>";
-		};
 		6C5732932C3CB05A00D0D370 = {
 			isa = PBXGroup;
 			children = (
@@ -108,11 +104,12 @@
 		6C57329E2C3CB05A00D0D370 /* Gather */ = {
 			isa = PBXGroup;
 			children = (
-				6C3434512C59B15400DD34E7 /* CreateEvent */,
+				6CC64D582CEFB52A00828F86 /* Components */,
+				6CC64D552CEFB32E00828F86 /* Screens */,
+				6CC64D532CEFB09400828F86 /* EventData.swift */,
 				6C57329F2C3CB05A00D0D370 /* GatherApp.swift */,
 				6C5732A12C3CB05A00D0D370 /* ContentView.swift */,
-				6C34344B2C45F15E00DD34E7 /* AppFlowViewModel.swift */,
-				6C3434492C45ED9B00DD34E7 /* GatherLandingView.swift */,
+				6C34344B2C45F15E00DD34E7 /* AppFlowController.swift */,
 				6C5732A32C3CB05B00D0D370 /* Assets.xcassets */,
 				6C5732A52C3CB05B00D0D370 /* Preview Content */,
 			);
@@ -142,6 +139,24 @@
 				6C5732BC2C3CB05C00D0D370 /* GatherUITestsLaunchTests.swift */,
 			);
 			path = GatherUITests;
+			sourceTree = "<group>";
+		};
+		6CC64D552CEFB32E00828F86 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6C34344D2C59ACD000DD34E7 /* CreateEventScreen.swift */,
+				6C3434492C45ED9B00DD34E7 /* GatherLandingScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6CC64D582CEFB52A00828F86 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6CC64D592CEFB54400828F86 /* GatherButton.swift */,
+			);
+			name = Components;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +291,11 @@
 			files = (
 				6C5732A22C3CB05A00D0D370 /* ContentView.swift in Sources */,
 				6C5732A02C3CB05A00D0D370 /* GatherApp.swift in Sources */,
-				6C34344C2C45F15E00DD34E7 /* AppFlowViewModel.swift in Sources */,
-				6C34344A2C45ED9B00DD34E7 /* GatherLandingView.swift in Sources */,
-				6C34344E2C59ACD000DD34E7 /* CreateEventView.swift in Sources */,
+				6CC64D542CEFB09400828F86 /* EventData.swift in Sources */,
+				6C34344C2C45F15E00DD34E7 /* AppFlowController.swift in Sources */,
+				6C34344A2C45ED9B00DD34E7 /* GatherLandingScreen.swift in Sources */,
+				6C34344E2C59ACD000DD34E7 /* CreateEventScreen.swift in Sources */,
+				6CC64D5A2CEFB54400828F86 /* GatherButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

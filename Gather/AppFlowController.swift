@@ -5,10 +5,14 @@ enum NavigationStep: Int {
     case create
 }
 
-class AppFlowViewModel: ObservableObject {
+class AppFlowController: ObservableObject {
     @Published var navigationPath = NavigationPath()
     
     func navigateToCreateEvent() {
         navigationPath.append(NavigationStep.create.rawValue)
+    }
+
+    func pop() {
+        navigationPath.removeLast()
     }
 }

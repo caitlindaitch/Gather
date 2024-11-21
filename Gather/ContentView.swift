@@ -1,19 +1,14 @@
 import SwiftUI
 
-
 struct AppView: View {
-    @StateObject var flowViewModel: AppFlowViewModel
+    @StateObject var flowController: AppFlowController
 
     var body: some View {
-        NavigationStack(path: $flowViewModel.navigationPath) {
-            GatherLandingView(viewModel: flowViewModel)
+        NavigationStack(path: $flowController.navigationPath) {
+            GatherLandingView(flowController: flowController)
             .navigationDestination(for: Int.self) { i in
-                CreateEventScreen(flowViewModel: flowViewModel)
+                CreateEventScreen(flowController: flowController)
             }
         }
     }
-}
-
-#Preview {
-    AppView(flowViewModel: AppFlowViewModel())
 }
