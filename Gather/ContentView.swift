@@ -2,6 +2,7 @@ import SwiftUI
 
 struct AppView: View {
     @StateObject var flowController: AppFlowController
+    @Environment(\.modelContext) private var context
 
     var body: some View {
         NavigationStack(path: $flowController.path) {
@@ -15,7 +16,7 @@ struct AppView: View {
                     case .viewAll:
                         ViewEventsScreen(flowController: flowController)
                     case .edit(let event):
-                        EditEventScreen(flowController: flowController, initialEvent: event)
+                        EditEventScreen(flowController: flowController, event: event)
                     }
             }
         }

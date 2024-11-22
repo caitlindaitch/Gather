@@ -8,13 +8,18 @@ struct ViewEventsScreen: View {
 
     var body: some View {
         VStack {
-            List(events) { event in
-                HStack {
-                    Text(event.name)
-                    Button(action: { editEvent(event) }) {
-                        Text("EDIT")
+            if events.count > 0 {
+                List(events) { event in
+                    HStack {
+                        Text(event.name)
+                        Spacer()
+                        Button(action: { editEvent(event) }) {
+                            Text("Edit")
+                        }
                     }
                 }
+            } else {
+                Text("No Gather events planned")
             }
         }
     }

@@ -3,41 +3,45 @@ import SwiftUI
 struct EditEventScreen: View {
     @Environment(\.modelContext) private var context
     @StateObject var flowController: AppFlowController
-    var initialEvent: EventModel
-
-    /// Data Bindings
-
-    @State var name: String = ""
-    @State var location: String = ""
-    @State var eventDate: Date = Date()
-    @State var eventDescription: String = ""
+    @Bindable var event: EventModel
 
     var body: some View {
         Form {
             Section {
-                TextField("Name", text: $name)
-                TextField("Location", text: $location)
-                DatePicker("Date", selection: $eventDate)
+                TextField("Name", text: $event.name)
+                TextField("Location", text: $event.location)
+                DatePicker("Date", selection: $event.date)
             } header: {
                 Text("Event details")
             }
 
             Section {
-                TextEditor(text: $eventDescription)
+                TextEditor(text: $event.eventDescription)
                     .frame(height: 200)
             } header: {
                 Text("Description")
             }
 
-//            Section {
-//                Button(action: saveEvent) {
-//                    Text("Save event")
-//                }
-//            }
+            Section {
+                Button(action: onSave) {
+                    Text("Save event")
+                }
+                Button("Delete", role: .destructive) {
+                    self.onDelete(event)
+                }
+            }
         }
     }
 
-    
+    private func onDelete(_ event: EventModel) {
+        context.delete(event)
+        flowController.pop()
+    }
+
+    private func onSave() {
+        try? context.save()
+        flowController.pop()
+    }
 }
 
 //#Preview {
