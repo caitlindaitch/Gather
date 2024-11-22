@@ -14,8 +14,8 @@ struct AppView: View {
                         GatherLandingScreen(flowController: flowController)
                     case .viewAll:
                         ViewEventsScreen(flowController: flowController)
-                    case .edit(var event):
-                        EditEventScreen(flowController: flowController, savedEvent: event)
+                    case .edit(let event):
+                        EditEventScreen(flowController: flowController, initialEvent: event)
                     }
             }
         }

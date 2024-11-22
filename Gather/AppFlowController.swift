@@ -1,6 +1,6 @@
 import SwiftUI
 
-enum NavigationScreen {
+enum NavigationScreen: Hashable {
     case landing
     case create
     case viewAll

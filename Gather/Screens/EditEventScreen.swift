@@ -7,10 +7,10 @@ struct EditEventScreen: View {
 
     /// Data Bindings
 
-    @State var name: String
-    @State var location: String
-    @State var eventDate: Date
-    @State var eventDescription: String
+    @State var name: String = ""
+    @State var location: String = ""
+    @State var eventDate: Date = Date()
+    @State var eventDescription: String = ""
 
     var body: some View {
         Form {
